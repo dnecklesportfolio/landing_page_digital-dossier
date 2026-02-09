@@ -4,16 +4,21 @@ export default function Footer() {
             <div className="flex items-center space-x-4">
                 <div className="w-3 h-3 bg-white rounded-full animate-pulse"></div>
                 <span className="font-mono uppercase font-bold tracking-widest text-sm md:text-base">
-                    Justice Delayed is Justice Denied
+                    Demand Justice
                 </span>
             </div>
 
-            <a
-                href="mailto:senator@brisport.gov"
-                className="bg-black hover:bg-white hover:text-black text-white px-6 py-2 font-serif font-bold transition-all duration-300 uppercase text-sm"
-            >
-                Email Senator Brisport
-            </a>
+            <div className="flex items-center gap-6">
+                <p className="hidden md:block font-serif text-sm max-w-lg text-right">
+                    <span className="font-bold">The community is watching.</span> Do not add your name to the list of officials who did nothing. Demand action from Forrest & Brisport.
+                </p>
+                <a
+                    href="#"
+                    className="bg-white text-alert-red px-6 py-2 rounded-none font-mono text-xs uppercase font-bold tracking-wider hover:bg-black hover:text-white transition-colors"
+                >
+                    Demand Justice — Contact Your Reps
+                </a>
+            </div>
         </footer>
     );
 }

@@ -9,10 +9,12 @@ export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
     const links = [
-        { name: "The Victim", target: "#the-victim" },
-        { name: "The Timeline", target: "#the-timeline" },
-        { name: "The Evidence", target: "#the-evidence" },
-        { name: "Take Action", target: "#take-action" },
+        { name: "Abstract", target: "#abstract" },
+        { name: "Narrative", target: "#narrative" },
+        { name: "Timeline", target: "#the-timeline" },
+        { name: "Accountability", target: "#accountability" },
+        { name: "Evidence", target: "#the-evidence" },
+        { name: "Action", target: "#take-action" },
     ];
 
     const handleScroll = (target: string) => {

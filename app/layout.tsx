@@ -30,7 +30,18 @@ export default function RootLayout({
       <body
         className={`${merriweather.variable} ${jetbrainsMono.variable} antialiased`}
       >
-        <SmoothScroll>{children}</SmoothScroll>
+        <SmoothScroll>
+          {children}
+          {/* Global SVG Filters for Forensic Effects */}
+          <svg className="absolute w-0 h-0 overflow-hidden" aria-hidden="true">
+            <defs>
+              <filter id="ink-bleed">
+                <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="3" result="noise" />
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="2" />
+              </filter>
+            </defs>
+          </svg>
+        </SmoothScroll>
       </body>
     </html>
   );

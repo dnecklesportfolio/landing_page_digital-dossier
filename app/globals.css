@@ -1,28 +1,71 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0a0a0a;
+  --foreground: #ededed;
   --alert-red: #ff0000;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-alert-red: var(--alert-red);
-  --font-serif: var(--font-merriweather);
-  --font-mono: var(--font-jetbrains-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-serif); /* Default to Serif for that "Newspaper" feel */
+  font-family: var(--font-serif);
+  /* Default to Serif for that "Newspaper" feel */
+}
+
+/* THE FORENSIC HIGHLIGHTER */
+.forensic-highlight,
+.marker-highlight {
+  position: relative;
+  display: inline-block;
+  white-space: normal;
+  /* Allow internal wrapping if ever needed, but inline-block keeps it together */
+  z-index: 1;
+}
+
+.forensic-highlight::after,
+.marker-highlight::after {
+  content: "";
+  position: absolute;
+  left: -4px;
+  right: -4px;
+  bottom: 0.1em;
+  height: 1.1em;
+  width: 0%;
+  /* Starts invisible */
+  background-color: rgba(255, 59, 48, 0.45);
+  /* Forensic Red */
+  z-index: -1;
+  mix-blend-mode: multiply;
+  /* Looks like ink on paper */
+  border-radius: 2px 8px 4px 10px;
+  /* Irregular marker edges */
+  filter: url(#ink-bleed);
+  pointer-events: none;
+}
+
+/* Triggered when the element enters the viewport */
+.forensic-highlight.active-draw::after,
+.marker-highlight.active-draw::after {
+  animation: marker-sweep-flick 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes marker-sweep-flick {
+  0% {
+    width: 0%;
+    transform: skewX(0deg);
+  }
+
+  75% {
+    width: 105%;
+    /* Sweep overshoot */
+    transform: skewX(-12deg);
+    /* The flick begins */
+  }
+
+  100% {
+    width: 100%;
+    transform: skewX(-18deg);
+    /* Final resting angle - requested -18deg */
+  }
 }

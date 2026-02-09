@@ -9,9 +9,9 @@ export default function SmoothScroll({
     children: React.ReactNode;
 }) {
     return (
-        // @ts-ignore
+        // @ts-expect-error - ReactLenis types might be outdated
         <ReactLenis root options={{ lerp: 0.1, duration: 1.5 }}>
-            {children as any}
+            {children}
         </ReactLenis>
     );
 }
