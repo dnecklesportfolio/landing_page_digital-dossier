@@ -53,7 +53,7 @@ This is the complete, finalized content plan for the **53 Madison Street Digital
 
 * **Exhibit A (The Address Switch):** On June 29, 2021, the corporation's address was fraudulently changed to Montvale, NJ—ensuring Yvonne never saw a single legal notice.
 * **Exhibit B (The Forgery Confession):** Recorded admission where the lender's attorney stated their secretary forged Yvonne's signature on the mortgage and note to commence the foreclosure.
-* **Exhibit C (The $15,000 Theft):** At the August 2, 2021 closing, ==National Standard Abstract (NSA)==—represented by ==Paul Interlandi==—knowingly collected a 'Mansion Tax' on a 6-unit property where the tax is legally impossible. This ==$15,000== was part of a coordinated package of 'stolen fees' that vanished at the closing table.
+* **Exhibit C (The $15,000 Theft):** At the August 2, 2021 closing, ==National Standard Abstract (NSA)==—specifically representative ==Paul Interlandi==—knowingly collected an illegal 'Mansion Tax' on a 6-unit property where the tax is legally impossible. This ==$15,000== was part of a coordinated package of 'stolen fees' that vanished at the closing table.
 * **Exhibit D (The Factory of Fraud):** We have documented over 100 instances of forged signatures within a single closing binder, proving a coordinated effort to steal 53 Madison Street through sheer repetition of criminal acts.
 
 ### **7. The Call to Action (The Primary Target)**

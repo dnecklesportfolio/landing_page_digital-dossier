@@ -22,7 +22,7 @@ export default function EvidenceGrid() {
             title: "The $15,000 Theft",
             date: "Aug 2, 2021",
             size: "ILLEGAL_TAX",
-            description: "At the August 2, 2021 closing, ==National Standard Abstract (NSA)==—represented by ==Paul Interlandi==—knowingly collected a 'Mansion Tax' on a 6-unit property where the tax is legally impossible. The money disappeared at the closing table. This ==$15,000== was part of a coordinated package of 'stolen fees' that vanished at the closing table."
+            description: "At the August 2, 2021 closing, ==National Standard Abstract (NSA)==—specifically representative ==Paul Interlandi==—knowingly collected an illegal 'Mansion Tax' on a 6-unit property where the tax is legally impossible. The money disappeared at the closing table. This ==$15,000== was part of a coordinated package of 'stolen fees' that vanished at the closing table."
         },
         {
             id: "EXHIBIT D",
